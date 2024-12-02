@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca - Minha Música</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="biblioteca.html">Biblioteca</a></li>
+        </ul>
+        <div class="perfil">
+          <img src="imagens/VGFN8170.jpg" alt="Perfil" />
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <main class="content">
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="Buscar músicas..." />
+        </div>
+
+        <div class="music-list">
+          <h2>Biblioteca de Músicas</h2>
+          <ul id="songs">
+            <!-- Lista de músicas será gerada pelo JavaScript -->
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <footer class="player">
+      <div class="now-playing">
+        <img
+          id="current-image"
+          src="imagens/song1.jpg"
+          alt="Capa da Música"
+          width="50"
+          height="50"
+        />
+        <p id="current-song">Nenhuma música selecionada</p>
+      </div>
+      <div class="controls">
+        <button id="prev">⏮️</button>
+        <button id="play-pause">⏯️</button>
+        <button id="next">⏭️</button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
